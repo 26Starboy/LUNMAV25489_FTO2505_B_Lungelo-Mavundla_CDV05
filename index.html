@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lungelo Mavundla | Portfolio</title>
+  <meta name="description" content="Full Stack Developer Portfolio - Lungelo Mavundla. Projects, Skills, and Contact.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <header id="navigation">
+    <div class="logo">Lungelo Mavundla</div>
+    <nav class="desktop-nav">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button id="mobile-menu-btn" aria-label="Toggle menu" aria-expanded="false">
+      <span class="burger"></span>
+    </button>
+    <nav id="mobile-menu" class="mobile-nav">
+      <a class="mobile-nav-link" href="#about">About</a>
+      <a class="mobile-nav-link" href="#skills">Skills</a>
+      <a class="mobile-nav-link" href="#projects">Projects</a>
+      <a class="mobile-nav-link" href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero">
+    <div class="hero-content">
+      <h1 class="hero-greeting">Hi, I'm Lungelo!</h1>
+      <h2 class="hero-title">Aspiring front end Developer</h2>
+      <h3 class="hero-subtitle">I create modern, responsive web experiences.</h3>
+      <p class="hero-description">Check out my latest projects and skills below.</p>
+      <div class="hero-buttons">
+        <button onclick="scrollToSection('projects')">Explore My Work</button>
+        <button onclick="scrollToSection('contact')">Contact Me</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I'm Lungelo, a passionate developer building web apps with React, Node.js, and modern web technologies. I love creating clean, responsive, and accessible interfaces.</p>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-category">
+        <h3>Frontend</h3>
+        <div class="skill-progress" data-level="90%">HTML</div>
+        <div class="skill-progress" data-level="85%">CSS</div>
+        <div class="skill-progress" data-level="80%">JavaScript</div>
+        <div class="skill-progress" data-level="75%">React</div>
+      </div>
+      <div class="skill-category">
+        <h3>Backend</h3>
+        <div class="skill-progress" data-level="80%">Node.js</div>
+        <div class="skill-progress" data-level="70%">Express</div>
+        <div class="skill-progress" data-level="65%">MongoDB</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <img class="project-img" src="src/assets/ecommerce-dashboard.jpg" alt="E-commerce Dashboard">
+        <h3>E-commerce Dashboard</h3>
+        <p>A responsive admin dashboard for online stores built with React and Tailwind.</p>
+      </div>
+      <div class="project-card">
+        <img class="project-img" src="src/assets/task-management.jpg" alt="Task Management App">
+        <h3>Task Management App</h3>
+        <p>Organize and manage tasks with an intuitive drag-and-drop interface.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form id="contact-form">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Toast Notifications -->
+  <div id="toast-container"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
